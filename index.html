@@ -10,12 +10,8 @@
         .my-div-icon {}
         .journey-row {
             padding-top: 10px;
-            /*border-style: solid;*/
             border-top: thin double #dddddd;
         }
-        /*.journey {
-            padding-top: 10px;
-        }*/
         .journey-icon {
             height: 10px;
             width: 5px;
@@ -82,7 +78,7 @@
             9999: "Unset"
         } 
 
-        var map = L.map('map');//.setView([51.505, -0.09], 13);
+        var map = L.map('map');
 
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
             maxZoom: 18,
@@ -91,23 +87,6 @@
                 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
             id: 'mapbox.streets'
         }).addTo(map);
-
-
-        // L.marker([51.5, -0.09]).addTo(map)
-        //     .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-        // L.circle([51.508, -0.11], 500, {
-        //     color: 'red',
-        //     fillColor: '#f03',
-        //     fillOpacity: 0.5
-        // }).addTo(map).bindPopup("I am a circle.");
-
-        // L.polygon([
-        //     [51.509, -0.08],
-        //     [51.503, -0.06],
-        //     [51.51, -0.047]
-        // ]).addTo(map).bindPopup("I am a polygon.");
-
 
         var popup = L.popup();
 
@@ -147,7 +126,7 @@
             // Journey legs
             for (i = 0; i < journey.legs.length; i++) {
                 leg = journey.legs[i];
-                // console.log(leg);
+                // TODO: add some details about the leg of the journey
             }
             $("#journeys").append(html);
         }
@@ -162,12 +141,7 @@
             for (i = 0; i < journeyInfos.length; i++) {
                 journeyInfo = journeyInfos[i];
 
-                // journeyName = journeyInfo.name;
-                // journeyColour = journeyInfo.colour;
-                // durationSecs = journeyInfo.journey.duration;
-                // isShortest = journeyInfo.isShortest;
-
-                addJourneyToList(journeyInfo); //journeyName, journeyColour, durationSecs, isShortest);
+                addJourneyToList(journeyInfo);
             }
         }
 
@@ -212,12 +186,8 @@
 
         $("document").ready(function () {
             $.getJSON("/data/test.json", function (data) {
-                //
-                console.log(data);
                 var journeyData = data.data;
-                console.log(journeyData);
                 var journeys = journeyData.journeys;
-                console.log(journeys);
 
                 var colourScale = d3.scale.category20(),
                     legsLookup = {},
@@ -233,9 +203,7 @@
 
                 for (i = 0; i < journeys.length; i++) {
                     journey = journeys[i];
-                    // console.log("journey", journey);
                     journeyColour = colourScale(i);
-                    // console.log("journeyColour", journeyColour);
                     journeyName = 'Journey ' + (i + 1);
                     duration = journey.duration;
 
@@ -250,18 +218,18 @@
                         var legId = getNewId();
                         leg = journey.legs[j];
                         legsLookup[legId] = leg;
-                        latlngs = L.PolylineUtil.decode(leg.polyline);
-                        Array.prototype.push.apply(allLatlngs, latlngs);
-                        // console.log("leg", leg);
-                        // console.log("L.PolylineUtil.decode(encoded)");
-                        // console.log(latlngs);
-                        // console.log(L.PolylineUtil.decode(leg.polyline));
 
-                        // create a red polyline from an array of LatLng points
+                        // Decode the polyline data (Google maps polyline encoding)
+                        latlngs = L.PolylineUtil.decode(leg.polyline);
+
+                        // Keep track of all points for zoom bounding box
+                        Array.prototype.push.apply(allLatlngs, latlngs);
+
+                        // create a polyline from an array of LatLng points
                         var polyline = L.polyline(latlngs, {color: journeyColour}).addTo(map);
 
+                        // Add an icon to show the type of vehicle
                         var firstPoint = latlngs[0];
-
                         var image = 'images/marker.png';
                         if (leg.vehicleType == "3") {
                             image = 'images/bus.png';
@@ -269,47 +237,25 @@
                         if (leg.vehicleType == "9") {
                             image = 'images/walk.png';
                         }
-                        console.log("leg.vehicleType", leg.vehicleType);
-
                         var myIcon = L.icon({
                             iconUrl: image,
                             iconSize: [30, 30]
                         });
-
-                        // var myIcon = L.icon({
-                        //     iconUrl: 'images/marker.png',
-                        //     iconRetinaUrl: 'my-icon@2x.png',
-                        //     // iconSize: [38, 95],
-                        //     iconAnchor: [22, 94],
-                        //     // popupAnchor: [-3, -76],
-                        //     // shadowUrl: 'my-icon-shadow.png',
-                        //     // shadowRetinaUrl: 'my-icon-shadow@2x.png',
-                        //     shadowSize: [68, 95],
-                        //     // shadowAnchor: [22, 94]
-                        // });
-
                         L.marker(firstPoint, {icon: myIcon}).addTo(map);
                         
                     }
 
-                    // Work out halfway point so label can be placed there
+                    // Work out halfway point so journey label can be placed there
                     var midLegIndex = Math.floor(legs.length / 2);
                     var midLeg = legs[midLegIndex];
                     latlngs = L.PolylineUtil.decode(midLeg.polyline);
                     var midLegLatlng = latlngs[0];
-                    // console.log("midLegLatlng", midLegLatlng);
-                    // console.log("Journey midleg", midLeg);
                     var myIcon = L.divIcon({className: 'my-div-icon', html: journeyName});
-                    // you can set .my-div-icon styles in CSS
                     L.marker(midLegLatlng, {icon: myIcon}).addTo(map);
-                    // addJourneyToList(journeyName, journeyColour, duration);
-
                 }
 
                 analyseJourneys(journeyInfo);
                 drawJourneyList(journeyInfo);
-
-                // console.log(legsLookup);
 
                 // zoom the map to the polyline
                 map.fitBounds(allLatlngs);
