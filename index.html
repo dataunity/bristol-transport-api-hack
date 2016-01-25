@@ -1,0 +1,321 @@
+<html>
+<head>
+    <title>Cost of journey</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #map { height: 400px; }
+        .my-div-icon {}
+        .journey-row {
+            padding-top: 10px;
+            /*border-style: solid;*/
+            border-top: thin double #dddddd;
+        }
+        /*.journey {
+            padding-top: 10px;
+        }*/
+        .journey-icon {
+            height: 10px;
+            width: 5px;
+        }
+        .journey-name {
+            
+        }
+        .journey-col {
+            padding-right: 20px;
+        }
+        .journey-greenest {
+            color: #73AD21;
+        }
+        .journey-comments {
+            color: #999;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/Polyline.encoded.js"></script>
+</head>
+<body>
+    <div>
+        <button>Select start point</button>
+        <button>Select end point</button>
+        <select>
+            <option>Leaving</option>
+        </select>
+        <select>
+            <option>Today</option>
+        </select>
+        <span> at </span>
+        <select>
+            <option>17</option>
+        </select>
+        <span>:</span>
+        <select>
+            <option>00</option>
+            <option>15</option>
+            <option>30</option>
+            <option>45</option>
+        </select>
+        <button>Go!</button>
+    </div>
+    <hr>
+    <div id="map"></div>
+    <hr>
+    <div id="journeys"></div>
+    <script>
+        
+    </script>
+    <script>
+        var vehicleEnum = {
+            0: "Tram",
+            1: "Subway",
+            2: "Rail",
+            3: "Bus",
+            4: "Ferry",
+            9: "Walking",
+            12: "Car",
+            13: "Coach",
+            9000: "Multiple",
+            9999: "Unset"
+        } 
+
+        var map = L.map('map');//.setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            id: 'mapbox.streets'
+        }).addTo(map);
+
+
+        // L.marker([51.5, -0.09]).addTo(map)
+        //     .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+        // L.circle([51.508, -0.11], 500, {
+        //     color: 'red',
+        //     fillColor: '#f03',
+        //     fillOpacity: 0.5
+        // }).addTo(map).bindPopup("I am a circle.");
+
+        // L.polygon([
+        //     [51.509, -0.08],
+        //     [51.503, -0.06],
+        //     [51.51, -0.047]
+        // ]).addTo(map).bindPopup("I am a polygon.");
+
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(map);
+        }
+
+        function addJourneyToList(journeyInfo) {
+            var html = '<div class="journey-row">',
+                journeyName = journeyInfo.name,
+                colour = journeyInfo.colour,
+                journey = journeyInfo.journey,
+                durationSecs = journey.duration,
+                isShortest = journeyInfo.isShortest,
+                isGreenest = journeyInfo.isGreenest,
+                isCheapest = journeyInfo.isCheapest,
+                i, leg;
+
+            html += '<span class="journey-icon" style="background-color:' + colour + '">&nbsp;</span>';
+            html += '<span class="journey-name journey-col">' + journeyName + '</span>';
+            html += '<span class="journey-col">' + Math.round(durationSecs / 30)  + ' mins</span>';
+            html += '<span class="journey-col"><a href="#">show details</a></span>';
+            if (isShortest) {
+                html += '<span class="journey-comments journey-col">shortest</span>';
+            }
+            if (isGreenest) {
+                html += '<span class="journey-greenest journey-col">greenest</span>';
+            }
+            if (isCheapest) {
+                html += '<span class="journey-comments journey-col">cheapest</span>';
+            }
+            html += '</div>';
+
+            // Journey legs
+            for (i = 0; i < journey.legs.length; i++) {
+                leg = journey.legs[i];
+                // console.log(leg);
+            }
+            $("#journeys").append(html);
+        }
+
+        function drawJourneyList (journeyInfos) {
+            var i = 0, 
+                journeyInfo,
+                journeyName, journeyColour,
+                isShortest,
+                durationSecs;
+
+            for (i = 0; i < journeyInfos.length; i++) {
+                journeyInfo = journeyInfos[i];
+
+                // journeyName = journeyInfo.name;
+                // journeyColour = journeyInfo.colour;
+                // durationSecs = journeyInfo.journey.duration;
+                // isShortest = journeyInfo.isShortest;
+
+                addJourneyToList(journeyInfo); //journeyName, journeyColour, durationSecs, isShortest);
+            }
+        }
+
+        function analyseJourneys (journeyInfos) {
+            var i = 0, 
+                journeyInfo,
+                journeyName, journeyColour,
+                durationSecs,
+                bestIndex, bestValue;
+
+            // Is shortest?
+            bestValue = Number.MAX_VALUE;
+            bestIndex = NaN;
+            for (i = 0; i < journeyInfos.length; i++) {
+                journeyInfo = journeyInfos[i];
+
+                journeyName = journeyInfo.name;
+                journeyColour = journeyInfo.colour;
+                durationSecs = journeyInfo.journey.duration;
+
+                if (durationSecs < bestValue) {
+                    bestValue = durationSecs;
+                    bestIndex = i;
+                }
+            }
+
+            if (!isNaN(bestIndex)) {
+                journeyInfos[bestIndex].isShortest = true;
+                console.log("Found shortest");
+            }
+
+            // Is greenest?
+            // TODO: real implementation
+            journeyInfos[4].isGreenest = true;
+
+            // Is cheapest?
+            // TODO: real implementation
+            journeyInfos[3].isCheapest = true;
+        }
+
+        map.on('click', onMapClick);
+
+        $("document").ready(function () {
+            $.getJSON("/data/test.json", function (data) {
+                //
+                console.log(data);
+                var journeyData = data.data;
+                console.log(journeyData);
+                var journeys = journeyData.journeys;
+                console.log(journeys);
+
+                var colourScale = d3.scale.category20(),
+                    legsLookup = {},
+                    i, j, journey, journeyColour, duration,
+                    journeyInfo = [],
+                    legs, leg, latlngs, colourScale,
+                    allLatlngs = [],
+                    counter = 0;
+
+                function getNewId () {
+                    return counter++;
+                }
+
+                for (i = 0; i < journeys.length; i++) {
+                    journey = journeys[i];
+                    // console.log("journey", journey);
+                    journeyColour = colourScale(i);
+                    // console.log("journeyColour", journeyColour);
+                    journeyName = 'Journey ' + (i + 1);
+                    duration = journey.duration;
+
+                    journeyInfo.push({
+                        "colour": journeyColour,
+                        "name": journeyName,
+                        "journey": journey
+                    });
+
+                    legs = journey.legs;
+                    for (j = 0; j < journey.legs.length; j++) {
+                        var legId = getNewId();
+                        leg = journey.legs[j];
+                        legsLookup[legId] = leg;
+                        latlngs = L.PolylineUtil.decode(leg.polyline);
+                        Array.prototype.push.apply(allLatlngs, latlngs);
+                        // console.log("leg", leg);
+                        // console.log("L.PolylineUtil.decode(encoded)");
+                        // console.log(latlngs);
+                        // console.log(L.PolylineUtil.decode(leg.polyline));
+
+                        // create a red polyline from an array of LatLng points
+                        var polyline = L.polyline(latlngs, {color: journeyColour}).addTo(map);
+
+                        var firstPoint = latlngs[0];
+
+                        var image = 'images/marker.png';
+                        if (leg.vehicleType == "3") {
+                            image = 'images/bus.png';
+                        }
+                        if (leg.vehicleType == "9") {
+                            image = 'images/walk.png';
+                        }
+                        console.log("leg.vehicleType", leg.vehicleType);
+
+                        var myIcon = L.icon({
+                            iconUrl: image,
+                            iconSize: [30, 30]
+                        });
+
+                        // var myIcon = L.icon({
+                        //     iconUrl: 'images/marker.png',
+                        //     iconRetinaUrl: 'my-icon@2x.png',
+                        //     // iconSize: [38, 95],
+                        //     iconAnchor: [22, 94],
+                        //     // popupAnchor: [-3, -76],
+                        //     // shadowUrl: 'my-icon-shadow.png',
+                        //     // shadowRetinaUrl: 'my-icon-shadow@2x.png',
+                        //     shadowSize: [68, 95],
+                        //     // shadowAnchor: [22, 94]
+                        // });
+
+                        L.marker(firstPoint, {icon: myIcon}).addTo(map);
+                        
+                    }
+
+                    // Work out halfway point so label can be placed there
+                    var midLegIndex = Math.floor(legs.length / 2);
+                    var midLeg = legs[midLegIndex];
+                    latlngs = L.PolylineUtil.decode(midLeg.polyline);
+                    var midLegLatlng = latlngs[0];
+                    // console.log("midLegLatlng", midLegLatlng);
+                    // console.log("Journey midleg", midLeg);
+                    var myIcon = L.divIcon({className: 'my-div-icon', html: journeyName});
+                    // you can set .my-div-icon styles in CSS
+                    L.marker(midLegLatlng, {icon: myIcon}).addTo(map);
+                    // addJourneyToList(journeyName, journeyColour, duration);
+
+                }
+
+                analyseJourneys(journeyInfo);
+                drawJourneyList(journeyInfo);
+
+                // console.log(legsLookup);
+
+                // zoom the map to the polyline
+                map.fitBounds(allLatlngs);
+            });
+        });
+
+    </script>
+</body>
+</html>

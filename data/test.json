@@ -1,0 +1,1310 @@
+{
+    "data": {
+        "attributionsHTML": "", 
+        "journeys": [
+            {
+                "arrivalTime": "2016-01-23T11:55:00+00:00", 
+                "changeCount": 2, 
+                "departureTime": "2016-01-23T11:24:00+00:00", 
+                "destinationPlacePointID": "-2106225720", 
+                "duration": 1860, 
+                "legs": [
+                    {
+                        "arrivalTime": "2016-01-23T11:26:00+00:00", 
+                        "departureTime": "2016-01-23T11:24:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90990", 
+                        "distance": 142, 
+                        "duration": 120, 
+                        "originPlacePointID": "289306784", 
+                        "polyline": "swbyH`x|N@?FGz@y@ZOTGvBo@CY", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 140 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:51:00+00:00", 
+                        "departureTime": "2016-01-23T11:26:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90311", 
+                        "disruptions": [], 
+                        "duration": 1500, 
+                        "linkedTransitRouteInfo": {
+                            "lineName": "2", 
+                            "operatorName": "First in Bristol Bath & the West", 
+                            "routeType": 3
+                        }, 
+                        "linkedTransitTripInfo": {
+                            "headsign": "Stockwood (Bristol), The Coots"
+                        }, 
+                        "originPlacePointID": "0100BRP90990", 
+                        "polyline": "gpbyH|r|NBX??v@WZK|Ac@bBe@`Bc@JCBAZIrAKb@???P@fCN|@Hz@DV@t@F~@Ff@Dn@FZB\\@f@AZEREVE\\_@XW@CPSHSJS^y@NYVk@nAgDJY??f@uA@EFYH_@Lg@Hi@Hm@JmAFa@BGBIHSFKFGJMFE~AyBDIx@mAxAqBp@_AhBmCZa@??JOX_@DGRY@?`@m@N]N[FQPa@Jc@Ng@Pk@Jo@BKFm@@_@?m@C_@Ga@W[s@u@QKQIgAMw@M??w@M_@Ma@UCAa@Si@g@e@e@yAsAEIKWCYCc@Mc@GSEMgAoAIGEECEACW[c@m@GOIMEMS_BUyCAQ?MCYOaAE_@??UiBQmAEYIIOI_CjBMHICEGGYEYCa@Ga@AE??Km@[aBIUAEAEk@}Bk@}BI[CMCQ?[?C@i@AgAAeBBwABINUPQ|@k@JIVMdBeANI?AFADEn@]`@SLh@X`AJ^Nl@DRDR??FTr@zDBF\\hBJr@VtATnAf@~CBLFVXzA??h@pCJf@Nh@HPHRFFHJNFD?J?PETQRSt@w@PSV[LQRYBIBCHQv@aBTw@F[H_@HSZ_A??|@yCDKJODQFQHUDI^_ANa@P_@v@eA^g@TYp@y@p@q@DGLO|@aA??PSDI^a@FI\\o@Rm@@E@KHk@EMASBYD[Hc@HOJCPELDJFJJDLRLVDNEPOT[^s@Rc@\\u@", 
+                        "scheduledStopCalls": [
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:28:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:28:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "S-bound", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46115, 
+                                    "lng": -2.60843, 
+                                    "localityName": "", 
+                                    "name": "Clifton (Bristol), Belgrave Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90981", 
+                                    "stopIndicator": "N1", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:31:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:31:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Dd", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45651, 
+                                    "lng": -2.60652, 
+                                    "localityName": "", 
+                                    "name": "Tyndall's Park, Queen's Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90237", 
+                                    "stopIndicator": "Dd", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:33:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:33:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Pb", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45349, 
+                                    "lng": -2.60135, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, College Green", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90326", 
+                                    "stopIndicator": "Pb", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:35:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:35:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Cg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45359, 
+                                    "lng": -2.59789, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, The Centre", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90330", 
+                                    "stopIndicator": "Cg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:38:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:38:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop hc", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45676, 
+                                    "lng": -2.5926, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Nelson Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10783", 
+                                    "stopIndicator": "hc", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:40:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:40:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop sk", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45807, 
+                                    "lng": -2.59136, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), The Horsefair", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90399", 
+                                    "stopIndicator": "sk", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:44:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:44:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Sa", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45662, 
+                                    "lng": -2.58702, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Broad Weir", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10787", 
+                                    "stopIndicator": "Sa", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:45:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:45:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop sc", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45546, 
+                                    "lng": -2.59117, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Wine Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90385", 
+                                    "stopIndicator": "sc", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:47:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:47:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop bg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45313, 
+                                    "lng": -2.59002, 
+                                    "localityName": "", 
+                                    "name": "Redcliffe, Victoria Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10793", 
+                                    "stopIndicator": "bg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:49:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:49:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop tv", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.4508, 
+                                    "lng": -2.5864, 
+                                    "localityName": "", 
+                                    "name": "Redcliffe, Victoria Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10795", 
+                                    "stopIndicator": "tv", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:51:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:51:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop tf", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.44876, 
+                                    "lng": -2.58386, 
+                                    "localityName": "", 
+                                    "name": "Temple Meads, Temple Meads", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90311", 
+                                    "stopIndicator": "tf", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }
+                        ], 
+                        "steps": [], 
+                        "summaryHTML": "Take bus <span style=\"\" >2</span> towards Stockwood (Bristol), The Coots<br /><br /><i>First in Bristol Bath & the West</i>", 
+                        "type": "TransitJourneyLeg", 
+                        "vehicleType": 3
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:55:00+00:00", 
+                        "departureTime": "2016-01-23T11:51:00+00:00", 
+                        "destinationPlacePointID": "-2106225720", 
+                        "distance": 216, 
+                        "duration": 240, 
+                        "originPlacePointID": "0100BRP90311", 
+                        "polyline": "wq_yHbtwNFLHMDOXi@ISEOc@oAk@}AYc@Ym@s@uB", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 210 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }
+                ], 
+                "originPlacePointID": "289306784", 
+                "summaryHTML": "Whiteladies Road to Station Approach"
+            }, 
+            {
+                "arrivalTime": "2016-01-23T12:00:00+00:00", 
+                "changeCount": 2, 
+                "departureTime": "2016-01-23T11:24:00+00:00", 
+                "destinationPlacePointID": "-2106225720", 
+                "duration": 2160, 
+                "legs": [
+                    {
+                        "arrivalTime": "2016-01-23T11:26:00+00:00", 
+                        "departureTime": "2016-01-23T11:24:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90990", 
+                        "distance": 142, 
+                        "duration": 120, 
+                        "originPlacePointID": "289306784", 
+                        "polyline": "swbyH`x|N@?FGz@y@ZOTGvBo@CY", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 140 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:38:00+00:00", 
+                        "departureTime": "2016-01-23T11:26:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90396", 
+                        "disruptions": [], 
+                        "duration": 720, 
+                        "linkedTransitRouteInfo": {
+                            "lineName": "3", 
+                            "operatorName": "First in Bristol Bath & the West", 
+                            "routeType": 3
+                        }, 
+                        "linkedTransitTripInfo": {
+                            "headsign": "Broadmead (Bristol), Union Street"
+                        }, 
+                        "originPlacePointID": "0100BRP90990", 
+                        "polyline": "gpbyH|r|NBX??v@WZK|Ac@bBe@`Bc@JCBAZIrAKb@???P@fCN|@Hz@DV@t@F~@Ff@Dn@FZB\\@f@AZEREVE\\_@XW@CPSHSJS^y@NYVk@nAgDJY??f@uA@EFYH_@Lg@Hi@Hm@JmAFa@BGBIHSFKFGJMFE~AyBDIx@mAxAqBp@_AhBmCZa@??JOX_@DGRY@?`@m@N]N[FQPa@Jc@Ng@Pk@Jo@BKFm@@_@?m@C_@Ga@W[s@u@QKQIgAMw@M??w@M_@Ma@UCAa@Si@g@e@e@yAsAEIKWCYCc@Mc@GSEMw@{@??OSIGEECEACW[c@m@GOIMEMS_BUyCAQ?MCYOaA[iCQmAEYIIOI}AnA", 
+                        "scheduledStopCalls": [
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:28:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:28:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "S-bound", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46115, 
+                                    "lng": -2.60843, 
+                                    "localityName": "", 
+                                    "name": "Clifton (Bristol), Belgrave Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90981", 
+                                    "stopIndicator": "N1", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:30:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:30:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Dd", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45651, 
+                                    "lng": -2.60652, 
+                                    "localityName": "", 
+                                    "name": "Tyndall's Park, Queen's Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90237", 
+                                    "stopIndicator": "Dd", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:33:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:33:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Pb", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45349, 
+                                    "lng": -2.60135, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, College Green", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90326", 
+                                    "stopIndicator": "Pb", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:34:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:34:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Cg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45359, 
+                                    "lng": -2.59789, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, The Centre", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90330", 
+                                    "stopIndicator": "Cg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:36:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:36:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop ct", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.4558, 
+                                    "lng": -2.59548, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, Quay Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10781", 
+                                    "stopIndicator": "ct", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:38:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:38:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Si", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45754, 
+                                    "lng": -2.59189, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Union Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90396", 
+                                    "stopIndicator": "si", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }
+                        ], 
+                        "steps": [], 
+                        "summaryHTML": "Take bus <span style=\"\" >3</span> towards Broadmead (Bristol), Union Street<br /><br /><i>First in Bristol Bath & the West</i>", 
+                        "type": "TransitJourneyLeg", 
+                        "vehicleType": 3
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T12:00:00+00:00", 
+                        "departureTime": "2016-01-23T11:38:00+00:00", 
+                        "destinationPlacePointID": "-2106225720", 
+                        "distance": 1432, 
+                        "duration": 1320, 
+                        "originPlacePointID": "0100BRP90396", 
+                        "polyline": "shayHhfyNCK|AoAPMb@SdCiATKBAf@WZOCM??TAr@e@JILMDSEY?CZSZWSuAA]C_@ASCsAAYRu@?_@?C?OASBCNS@?T@Ta@l@mACM`AaABCAENO??j@lBXz@N_@vCkFXi@zAmCTy@NYLYRe@T]@K@IDm@hAwCZaADMAWAM??BAGkA@OBK?K?GbAK|@MJODEFIFGRWHGJMHKHMZ]FPFHBADEP_@FFHLHJ??AJ@LDRFR", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 1.4 km", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }
+                ], 
+                "originPlacePointID": "289306784", 
+                "summaryHTML": "Whiteladies Road to Station Approach"
+            }, 
+            {
+                "arrivalTime": "2016-01-23T11:57:00+00:00", 
+                "changeCount": 2, 
+                "departureTime": "2016-01-23T11:25:00+00:00", 
+                "destinationPlacePointID": "-2106225720", 
+                "duration": 1920, 
+                "legs": [
+                    {
+                        "arrivalTime": "2016-01-23T11:31:00+00:00", 
+                        "departureTime": "2016-01-23T11:25:00+00:00", 
+                        "destinationPlacePointID": "9100CLFDOWN0$", 
+                        "distance": 198, 
+                        "duration": 360, 
+                        "originPlacePointID": "289306784", 
+                        "polyline": "swbyH`x|N@?FG??PbAZf@PG@CZMNlAJbAEDAMKmAMu@CQCB??d@rG", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 190 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:53:00+00:00", 
+                        "departureTime": "2016-01-23T11:31:00+00:00", 
+                        "destinationPlacePointID": "9100BRSTLTM0$", 
+                        "disruptions": [], 
+                        "duration": 1320, 
+                        "linkedTransitRouteInfo": {
+                            "lineName": "52219", 
+                            "operatorName": "Great Western Railway", 
+                            "routeType": 3
+                        }, 
+                        "linkedTransitTripInfo": {
+                            "headsign": "Bristol Temple Meads Rail Station"
+                        }, 
+                        "originPlacePointID": "9100CLFDOWN0$", 
+                        "polyline": "ssbyHvb}NAe@Ck@Em@MiAKu@]sBMi@wIu_@_Hc[{@kDCO??aAiEa@oBOaAIk@MmAOyAIqAKkBE{B?qABkB@aAFgADy@HeAJ{ATgBz@wE`@kCDg@Dg@Be@@i@??B_@@g@?eAGgBGaAEe@YiB{@sDwEgLaCoGuAmDiA}CuAyDkAaEYcASmAOmAMaBGu@CuA?aABsA@_AJoAJy@NqATiAZkAf@uAj@sANWXe@JOv@wABG^s@Zw@j@eAnBoDpAcCt@uAx@qAlBsCv@aAt@y@fAoAZY??d@e@v@s@x@q@fBqAhBeA|@i@`@OnB{@|Bu@`Ci@v@K~@M`AIfDMhACr@@l@DrBNrALrAXhAVjA\\d@L??PFv@XtB|@l@VPJ`A`@hAh@`@RpAz@f@VXPj@b@|@t@RPbA|@PNp@r@v@|@RXr@bAbAlBR`@f@nATr@|@~CVhARbAZtBLfARhBBb@PrBPrBHz@L`BLnAP|BFl@PxBD`@Bh@Db@B`@L`ATfAPt@Hd@ZjA^dAR`@NX\\b@f@h@\\\\ZV`@R", 
+                        "scheduledStopCalls": [
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:34:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:34:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46838, 
+                                    "lng": -2.59912, 
+                                    "localityName": "", 
+                                    "name": "Redland Rail Station", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "9100REDLAND0$", 
+                                    "stopIndicator": "", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:36:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:36:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46835, 
+                                    "lng": -2.58869, 
+                                    "localityName": "", 
+                                    "name": "Montpelier Rail Station", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "9100MONPELR0$", 
+                                    "stopIndicator": "", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:40:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:40:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46752, 
+                                    "lng": -2.56635, 
+                                    "localityName": "", 
+                                    "name": "Stapleton Road Rail Station", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "9100STPLTNR0$", 
+                                    "stopIndicator": "SB", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:42:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:42:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45841, 
+                                    "lng": -2.5642, 
+                                    "localityName": "", 
+                                    "name": "Lawrence Hill Rail Station", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "9100LAWRNCH0$", 
+                                    "stopIndicator": "SB", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:53:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:53:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.44965, 
+                                    "lng": -2.5799, 
+                                    "localityName": "", 
+                                    "name": "Bristol Temple Meads Rail Station", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "9100BRSTLTM0$", 
+                                    "stopIndicator": "SB", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }
+                        ], 
+                        "steps": [], 
+                        "summaryHTML": "Take bus <span style=\"\" >52219</span> towards Bristol Temple Meads Rail Station<br /><br /><i>Great Western Railway</i>", 
+                        "type": "TransitJourneyLeg", 
+                        "vehicleType": 3
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:57:00+00:00", 
+                        "departureTime": "2016-01-23T11:53:00+00:00", 
+                        "destinationPlacePointID": "-2106225720", 
+                        "distance": 33, 
+                        "duration": 240, 
+                        "originPlacePointID": "9100BRSTLTM0$", 
+                        "polyline": "iw_yHj{vN@rF??@@HJ??AJ@LDRFR", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 30 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }
+                ], 
+                "originPlacePointID": "289306784", 
+                "summaryHTML": "Whiteladies Road to Station Approach"
+            }, 
+            {
+                "arrivalTime": "2016-01-23T12:01:00+00:00", 
+                "changeCount": 2, 
+                "departureTime": "2016-01-23T11:26:00+00:00", 
+                "destinationPlacePointID": "-2106225720", 
+                "duration": 2100, 
+                "legs": [
+                    {
+                        "arrivalTime": "2016-01-23T11:36:00+00:00", 
+                        "departureTime": "2016-01-23T11:26:00+00:00", 
+                        "destinationPlacePointID": "0100BRP92016", 
+                        "distance": 648, 
+                        "duration": 600, 
+                        "originPlacePointID": "289306784", 
+                        "polyline": "swbyH`x|N@?FGz@y@ZOAS@S@SDSZkAZ{@N_@x@}A@Ap@mAzAkBp@eAn@mBf@iBB]?a@CuCFu@Dw@Fg@@S?[CECK@KDGDm@?gAAYJC", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 640 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T12:00:00+00:00", 
+                        "departureTime": "2016-01-23T11:36:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90313", 
+                        "disruptions": [], 
+                        "duration": 1440, 
+                        "linkedTransitRouteInfo": {
+                            "lineName": "8", 
+                            "operatorName": "First in Bristol Bath & the West", 
+                            "routeType": 3
+                        }, 
+                        "linkedTransitTripInfo": {
+                            "headsign": "Temple Meads, Temple Meads"
+                        }, 
+                        "originPlacePointID": "0100BRP92016", 
+                        "polyline": "efbyHhi{NKB??@X?fABl@BD`@UDGJSPWTUp@i@TQVUDI`@k@d@s@d@o@`@k@TYB???POPGBCd@KDARENERKPM\\Wn@pC\\|Az@tDTdATfA@XOD?\\?n@??AJ@hA?X@dAJzAB`@HhAN`AP`AN\\Zh@NPFFLXL`@Jh@b@rBLHNP@CPSHSJS^y@NYVk@nAgDJY??f@uA@EFYH_@Lg@Hi@Hm@JmAFa@BGBIHSFKFGJMFE~AyBDIx@mAxAqBp@_AhBmCZa@??JOX_@DGRY@?`@m@N]N[FQPa@Jc@Ng@Pk@Jo@BKFm@@_@?m@C_@Ga@W[s@u@QKQIgAMw@M??w@M_@Ma@UCAa@Si@g@e@e@yAsAEIKWCYCc@Mc@GSEMgAoAIGEECEACW[c@m@GOIMEMS_BUyCAQ?MCYOaAE_@??UiBQmAEYIIOI_CjBMHICEGGYEYCa@Ga@Ms@[aBIUAEAEGY??c@cBk@}BI[CMCQ?[?C@i@AgAAeBBwABINUPQ|@k@JIVMl@_@??v@e@NI?AFADEn@]`@SvBqADCDEb@WRMFA^Ub@YHEJGJSBQ?QEu@AKCGSe@IAEEKUGQE_@?C?C?A?OBSDY^UDCJ?N@JD^F|@FPB??`@@b@LpAZxCt@x@ZZXxAXJ@\\Fj@FNDRD^BHB|AV??`@FjANr@LZ@F?F?ZEHOJCPELDJFJJDLRLVDNEPOT[^s@Rc@f@cADOXi@ISEOc@oAk@}AYc@Ym@_@iA", 
+                        "scheduledStopCalls": [
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:37:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:37:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "S-bound", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46048, 
+                                    "lng": -2.60129, 
+                                    "localityName": "", 
+                                    "name": "Kingsdown (Bristol), Myrtle Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP92041", 
+                                    "stopIndicator": "S", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:39:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:39:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "W-bound", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45866, 
+                                    "lng": -2.60422, 
+                                    "localityName": "", 
+                                    "name": "Tyndall's Park, Elton Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP92023", 
+                                    "stopIndicator": "W", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:41:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:41:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Dd", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45651, 
+                                    "lng": -2.60652, 
+                                    "localityName": "", 
+                                    "name": "Tyndall's Park, Queen's Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90237", 
+                                    "stopIndicator": "Dd", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:44:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:44:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Pb", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45349, 
+                                    "lng": -2.60135, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, College Green", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90326", 
+                                    "stopIndicator": "Pb", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:45:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:45:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Cg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45359, 
+                                    "lng": -2.59789, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, The Centre", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90330", 
+                                    "stopIndicator": "Cg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:48:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:48:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop hc", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45676, 
+                                    "lng": -2.5926, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Nelson Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10783", 
+                                    "stopIndicator": "hc", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:50:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:50:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop sm", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.4584, 
+                                    "lng": -2.59039, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), The Horsefair", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90404", 
+                                    "stopIndicator": "sm", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:51:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:51:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop b", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45791, 
+                                    "lng": -2.58641, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Penn Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10785", 
+                                    "stopIndicator": "b", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:54:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:54:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop of", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45491, 
+                                    "lng": -2.58322, 
+                                    "localityName": "", 
+                                    "name": "Old Market, Temple Way", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90307", 
+                                    "stopIndicator": "of", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:57:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:57:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop th", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.4512, 
+                                    "lng": -2.58439, 
+                                    "localityName": "", 
+                                    "name": "Temple Meads, Temple Way", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90309", 
+                                    "stopIndicator": "th", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T12:00:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T12:00:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Ta", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.44944, 
+                                    "lng": -2.58177, 
+                                    "localityName": "", 
+                                    "name": "Temple Meads, Temple Meads", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90313", 
+                                    "stopIndicator": "Ta", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }
+                        ], 
+                        "steps": [], 
+                        "summaryHTML": "Take bus <span style=\"\" >8</span> towards Temple Meads, Temple Meads<br /><br /><i>First in Bristol Bath & the West</i>", 
+                        "type": "TransitJourneyLeg", 
+                        "vehicleType": 3
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T12:01:00+00:00", 
+                        "departureTime": "2016-01-23T12:00:00+00:00", 
+                        "destinationPlacePointID": "-2106225720", 
+                        "distance": 19, 
+                        "duration": 60, 
+                        "originPlacePointID": "0100BRP90313", 
+                        "polyline": "_v_yH`gwNDESk@", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 10 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }
+                ], 
+                "originPlacePointID": "289306784", 
+                "summaryHTML": "Whiteladies Road to Station Approach"
+            }, 
+            {
+                "arrivalTime": "2016-01-23T12:00:00+00:00", 
+                "changeCount": 2, 
+                "departureTime": "2016-01-23T11:29:00+00:00", 
+                "destinationPlacePointID": "-2106225720", 
+                "duration": 1860, 
+                "legs": [
+                    {
+                        "arrivalTime": "2016-01-23T11:31:00+00:00", 
+                        "departureTime": "2016-01-23T11:29:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90990", 
+                        "distance": 142, 
+                        "duration": 120, 
+                        "originPlacePointID": "289306784", 
+                        "polyline": "swbyH`x|N@?FGz@y@ZOTGvBo@CY", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 140 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T11:56:00+00:00", 
+                        "departureTime": "2016-01-23T11:31:00+00:00", 
+                        "destinationPlacePointID": "0100BRP90311", 
+                        "disruptions": [], 
+                        "duration": 1500, 
+                        "linkedTransitRouteInfo": {
+                            "lineName": "1", 
+                            "operatorName": "First in Bristol Bath & the West", 
+                            "routeType": 3
+                        }, 
+                        "linkedTransitTripInfo": {
+                            "headsign": "Broom Hill (Brislington), Whitmore Avenue"
+                        }, 
+                        "originPlacePointID": "0100BRP90990", 
+                        "polyline": "gpbyH|r|NBX??v@WZK|Ac@bBe@`Bc@JCBAZIrAKb@???P@fCN|@Hz@DV@t@F~@Ff@Dn@FZB\\@f@AZEREVE\\_@XW@CPSHSJS^y@NYVk@nAgDJY??f@uA@EFYH_@Lg@Hi@Hm@JmAFa@BGBIHSFKFGJMFE~AyBDIx@mAxAqBp@_AhBmCZa@??JOX_@DGRY@?`@m@N]N[FQPa@Jc@Ng@Pk@Jo@BKFm@@_@?m@C_@Ga@W[s@u@QKQIgAMw@M??w@M_@Ma@UCAa@Si@g@e@e@yAsAEIKWCYCc@Mc@GSEMgAoAIGEECEACW[c@m@GOIMEMS_BUyCAQ?MCYOaAE_@??UiBQmAEYIIOI_CjBMHICEGGYEYCa@Ga@AE??Km@[aBIUAEAEk@}Bk@}BI[CMCQ?[?C@i@AgAAeBBwABINUPQ|@k@JIVMdBeANI?AFADEn@]`@SLh@X`AJ^Nl@DRDR??FTr@zDBF\\hBJr@VtATnAf@~CBLFVXzA??h@pCJf@Nh@HPHRFFHJNFD?J?PETQRSt@w@PSV[LQRYBIBCHQv@aBTw@F[H_@HSZ_A??|@yCDKJODQFQHUDI^_ANa@P_@v@eA^g@TYp@y@p@q@DGLO|@aA??PSDI^a@FI\\o@Rm@@E@KHk@EMASBYD[Hc@HOJCPELDJFJJDLRLVDNEPOT[^s@Rc@f@cADOXi@Xs@Zs@", 
+                        "scheduledStopCalls": [
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:33:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:33:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "S-bound", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.46115, 
+                                    "lng": -2.60843, 
+                                    "localityName": "", 
+                                    "name": "Clifton (Bristol), Belgrave Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90981", 
+                                    "stopIndicator": "N1", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:36:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:36:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Dd", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45651, 
+                                    "lng": -2.60652, 
+                                    "localityName": "", 
+                                    "name": "Tyndall's Park, Queen's Road", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90237", 
+                                    "stopIndicator": "Dd", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:38:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:38:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop Pb", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45349, 
+                                    "lng": -2.60135, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, College Green", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90326", 
+                                    "stopIndicator": "Pb", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:40:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:40:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Cg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45359, 
+                                    "lng": -2.59789, 
+                                    "localityName": "", 
+                                    "name": "Bristol City Centre, The Centre", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90330", 
+                                    "stopIndicator": "Cg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:43:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:43:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop hc", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45676, 
+                                    "lng": -2.5926, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Nelson Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10783", 
+                                    "stopIndicator": "hc", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:45:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:45:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop sk", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45807, 
+                                    "lng": -2.59136, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), The Horsefair", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90399", 
+                                    "stopIndicator": "sk", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:49:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:49:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Sa", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45662, 
+                                    "lng": -2.58702, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Broad Weir", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10787", 
+                                    "stopIndicator": "Sa", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:50:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:50:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop sc", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45546, 
+                                    "lng": -2.59117, 
+                                    "localityName": "", 
+                                    "name": "Broadmead (Bristol), Wine Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90385", 
+                                    "stopIndicator": "sc", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:52:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:52:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop bg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.45313, 
+                                    "lng": -2.59002, 
+                                    "localityName": "", 
+                                    "name": "Redcliffe, Victoria Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10793", 
+                                    "stopIndicator": "bg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:54:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:54:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop tv", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.4508, 
+                                    "lng": -2.5864, 
+                                    "localityName": "", 
+                                    "name": "Redcliffe, Victoria Street", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRA10795", 
+                                    "stopIndicator": "tv", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }, 
+                            {
+                                "scheduledCall": {
+                                    "scheduledArrivalTime": "2016-01-23T11:56:00+00:00", 
+                                    "scheduledDepartureTime": "2016-01-23T11:56:00+00:00"
+                                }, 
+                                "stop": {
+                                    "directionName": "Stop tg", 
+                                    "hasResourceStatus": false, 
+                                    "isClosed": false, 
+                                    "lat": 51.44829, 
+                                    "lng": -2.583, 
+                                    "localityName": "", 
+                                    "name": "Temple Meads, Temple Meads", 
+                                    "placePointType": 2, 
+                                    "primaryCode": "0100BRP90317", 
+                                    "stopIndicator": "tg", 
+                                    "stopMode": 3, 
+                                    "subClassType": "TransitStop"
+                                }
+                            }
+                        ], 
+                        "steps": [], 
+                        "summaryHTML": "Take bus <span style=\"\" >1</span> towards Broom Hill (Brislington), Whitmore Avenue<br /><br /><i>First in Bristol Bath & the West</i>", 
+                        "type": "TransitJourneyLeg", 
+                        "vehicleType": 3
+                    }, 
+                    {
+                        "arrivalTime": "2016-01-23T12:00:00+00:00", 
+                        "departureTime": "2016-01-23T11:56:00+00:00", 
+                        "destinationPlacePointID": "-2106225720", 
+                        "distance": 214, 
+                        "duration": 240, 
+                        "originPlacePointID": "0100BRP90317", 
+                        "polyline": "yn_yHvnwNA?Wh@[r@??EOc@oAk@}AYc@Ym@s@uB", 
+                        "steps": [], 
+                        "summaryHTML": "Walk for 210 metres", 
+                        "type": "JourneyLeg", 
+                        "vehicleType": 9
+                    }
+                ], 
+                "originPlacePointID": "289306784", 
+                "summaryHTML": "Whiteladies Road to Station Approach"
+            }
+        ], 
+        "placePoints": [
+            {
+                "hasResourceStatus": false, 
+                "lat": 51.46506, 
+                "lng": -2.61009, 
+                "localityName": "", 
+                "name": "Whiteladies Road", 
+                "placePointType": 0, 
+                "primaryCode": "289306784"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "lat": 51.44951, 
+                "lng": -2.58152, 
+                "localityName": "", 
+                "name": "Station Approach", 
+                "placePointType": 0, 
+                "primaryCode": "-2106225720"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.46388, 
+                "lng": -2.60927, 
+                "localityName": "Clifton Down", 
+                "name": "Clifton Down, Clifton Down Station", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP90990", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.44876, 
+                "lng": -2.58386, 
+                "localityName": "Temple Meads", 
+                "name": "Temple Meads, Temple Meads", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP90311", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.45754, 
+                "lng": -2.59189, 
+                "localityName": "Broadmead (Bristol)", 
+                "name": "Broadmead (Bristol), Union Street", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP90396", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.46442, 
+                "lng": -2.6118, 
+                "localityName": "Clifton (Bristol)", 
+                "name": "Clifton Down Rail Station", 
+                "placePointType": 2, 
+                "primaryCode": "9100CLFDOWN0$", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.44965, 
+                "lng": -2.5799, 
+                "localityName": "Bristol", 
+                "name": "Bristol Temple Meads Rail Station", 
+                "placePointType": 2, 
+                "primaryCode": "9100BRSTLTM0$", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.46227, 
+                "lng": -2.60261, 
+                "localityName": "Cotham (Bristol)", 
+                "name": "Cotham (Bristol), Cotham Hill", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP92016", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.44944, 
+                "lng": -2.58177, 
+                "localityName": "Temple Meads", 
+                "name": "Temple Meads, Temple Meads", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP90313", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }, 
+            {
+                "hasResourceStatus": false, 
+                "isClosed": false, 
+                "lat": 51.44829, 
+                "lng": -2.583, 
+                "localityName": "Temple Meads", 
+                "name": "Temple Meads, Temple Gate", 
+                "placePointType": 2, 
+                "primaryCode": "0100BRP90317", 
+                "stopMode": 0, 
+                "subClassType": "TransitStop"
+            }
+        ], 
+        "sourceName": "Transix", 
+        "status": {
+            "errorCode": 0, 
+            "statusCode": 0
+        }, 
+        "warningsHTML": ""
+    }, 
+    "success": true
+}
